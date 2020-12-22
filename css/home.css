@@ -33,13 +33,11 @@ h1 {
 }
 
 .main-section header {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 80px;
   padding: 5px 10px;
-  z-index: 99;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +47,8 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
 }
 
 @media (min-width: 767px) {
@@ -86,7 +86,7 @@ h1 {
 }
 
 .main-section header .logo-section a img {
-  width: 2.2rem;
+  width: 1.8rem;
   margin-right: 10px;
 }
 
@@ -104,7 +104,7 @@ h1 {
 
 .main-section header .logo-section a h1 {
   font-family: LogoFont, sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
   color: #fff;
 }
@@ -195,13 +195,35 @@ h1 {
   color: #000;
 }
 
+.main-section header .hamburger {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.main-section header .hamburger > img {
+  width: auto;
+}
+
+@media (min-width: 767px) {
+  .main-section header .hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-section header .hamburger {
+    display: none;
+  }
+}
+
 .main-section .side-nav {
   position: fixed;
   opacity: 1;
   pointer-events: all;
   top: 0;
   left: 0;
-  z-index: 50;
+  z-index: 99;
   -webkit-transition: opacity ease-in-out 0.5s;
   transition: opacity ease-in-out 0.5s;
   width: 100%;
@@ -220,6 +242,42 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-section .side-nav .cross {
+  height: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 5px 10px;
+}
+
+@media (min-width: 767px) {
+  .main-section .side-nav .cross {
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-section .side-nav .cross {
+    padding: 10px 15px;
+  }
+}
+
+.main-section .side-nav .cross .hamburger-close {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.main-section .side-nav .cross .hamburger-close > img {
+  width: auto;
 }
 
 .main-section .side-nav ul {
@@ -248,18 +306,6 @@ h1 {
 }
 
 .main-section .main-body {
-  margin-top: 80px;
-}
-
-@media (min-width: 767px) {
-  .main-section .main-body {
-    margin-top: 90px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .main-section .main-body {
-    margin-top: 90px;
-  }
+  color: #fff;
 }
 /*# sourceMappingURL=home.css.map */

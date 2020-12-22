@@ -46,19 +46,20 @@ h1 {
 }
 .main-section {
     header {
-        // background-color: rgb(255, 88, 88);
-        position: fixed;
-        top: 0;
-        left: 0;
+        // position: fixed;
+        // top: 0;
+        // left: 0;
+        position: relative;
         width: 100%;
         height: 80px;
 
         padding: 5px 10px;
-        z-index: 99;
+        z-index: 10;
 
         display: flex;
         align-items: center;
         justify-content: space-between;
+        transition: all ease-in-out 0.2s;
 
         @include desktop {
             height: 90px;
@@ -80,7 +81,7 @@ h1 {
                 cursor: pointer;
 
                 img {
-                    width: 2.2rem;
+                    width: 1.8rem;
                     margin-right: 10px;
 
                     @include desktop {
@@ -92,7 +93,7 @@ h1 {
                 }
                 h1 {
                     font-family: LogoFont, sans-serif;
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     margin: 0;
                     color: #fff;
 
@@ -164,14 +165,31 @@ h1 {
                 }
             }
         }
+
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            > img {
+                width: auto;
+            }
+
+            @include desktop {
+                display: none;
+            }
+            @include large-desktop {
+                display: none;
+            }
+        }
     }
+
     .side-nav {
         position: fixed;
         opacity: 1;
         pointer-events: all;
         top: 0;
         left: 0;
-        z-index: 50;
+        z-index: 99;
         transition: opacity ease-in-out 0.5s;
 
         width: 100%;
@@ -183,7 +201,30 @@ h1 {
         justify-content: flex-start;
         align-items: center;
 
-        // display: none;
+        .cross {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 5px 10px;
+
+            @include desktop {
+                padding: 10px 15px;
+            }
+            @include large-desktop {
+                padding: 10px 15px;
+            }
+
+            .hamburger-close {
+                padding: 10px;
+                cursor: pointer;
+                > img {
+                    width: auto;
+                }
+            }
+        }
+
         ul {
             list-style: none;
             padding: none;
@@ -209,12 +250,13 @@ h1 {
     }
 
     .main-body {
-        margin-top: 80px;
+        // margin-top: 80px;
+        color: #fff;
         @include desktop {
-            margin-top: 90px;
+            // margin-top: 90px;
         }
         @include large-desktop {
-            margin-top: 90px;
+            // margin-top: 90px;
         }
     }
 }

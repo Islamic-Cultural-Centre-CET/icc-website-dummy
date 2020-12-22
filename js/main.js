@@ -1,9 +1,11 @@
 const hamburger = document.querySelector('#hamburger')
-const logoSection = document.querySelector('.logo-section')
+const hamburgerClose = document.querySelector('#hamburger-close')
 const sideNav = document.querySelector('.side-nav')
 
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open')
-    logoSection.classList.toggle('hide-logo-section')
-    sideNav.classList.toggle('hide-side-nav')
+    sideNav.classList.remove('hide-side-nav')
+})
+
+hamburgerClose.addEventListener('click', () => {
+    sideNav.classList.add('hide-side-nav')
 })
