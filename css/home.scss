@@ -25,11 +25,21 @@ $desktop-width: 1024px;
 body {
     height: 100%;
     position: relative;
-    background-color: #000;
+    // background-color: #000;
 }
+
+.tester {
+    width: 100%;
+    height: 200px;
+    background: inherit;
+    position: relative;
+    z-index: 99;
+}
+
 h1 {
     color: #fff;
 }
+
 .main-section {
     position: relative;
     z-index: 0;
@@ -193,6 +203,7 @@ h1 {
     }
 
     .hide-side-nav {
+        visibility: hidden;
         opacity: 0;
         pointer-events: none;
     }

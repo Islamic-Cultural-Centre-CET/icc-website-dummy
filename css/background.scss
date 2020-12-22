@@ -49,12 +49,9 @@ body {
 }
 
 .page-bg {
-    // background: $color-bg;
-    // background-blend-mode: screen;
     background-image: url('../assets//layout-images//background.jpg');
     background-position: center;
     background-size: cover;
-    //   filter: grayscale(100%);
     z-index: -2;
 }
 
