@@ -1,9 +1,13 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+$tablet-width: 768px;
+$desktop-width: 1024px;
 
-body {
-    height: 100%;
+@mixin desktop {
+    @media (min-width: #{$tablet-width - 1}) {
+        @content;
+    }
+}
+@mixin large-desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
 }

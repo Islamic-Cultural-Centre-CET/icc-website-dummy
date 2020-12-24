@@ -35,6 +35,7 @@
 
         <!-- CSS Styles -->
         <link rel="stylesheet" href="./css/background.css" />
+        <link rel="stylesheet" href="./css/main.css" />
         <link rel="stylesheet" href="./css/home.css" />
 
         <title>
@@ -85,11 +86,21 @@
                     <ul>
                         <li><a href="#" class="active">HOME</a></li>
                         <li>
-                            <a href="pages/alumni-portal.html">ALUMNI PORTAL</a>
+                            <a href="./pages/alumni-portal.html"
+                                >ALUMNI PORTAL</a
+                            >
                         </li>
-                        <li><a href="#">CONTACT US</a></li>
-                        <li><a href="#">EVENTS</a></li>
-                        <li><a href="#">COMMITTEE</a></li>
+                        <li>
+                            <a href="./index.html#contact-us">CONTACT US</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#heading-events">EVENTS</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#committee-heading"
+                                >COMMITTEE</a
+                            >
+                        </li>
                     </ul>
                 </nav>
 
@@ -114,11 +125,13 @@
                 <ul class="nav-list" id="nav-list">
                     <li><a href="#" class="active-nav">HOME</a></li>
                     <li>
-                        <a href="pages/alumni-portal.html">ALUMNI PORTAL</a>
+                        <a href="./pages/alumni-portal.html">ALUMNI PORTAL</a>
                     </li>
-                    <li><a href="#">EVENTS</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#">COMMITTEE</a></li>
+                    <li><a href="./index.html#heading-events">EVENTS</a></li>
+                    <li><a href="./index.html#contact-us">CONTACT US</a></li>
+                    <li>
+                        <a href="./index.html#committee-heading">COMMITTEE</a>
+                    </li>
                 </ul>
 
                 <div class="social-media-icons">
@@ -174,7 +187,7 @@
                         </div>
                     </div>
                     <div class="explore-more">
-                        <a href="#heading-events">
+                        <a href="./index.html#heading-events">
                             <span> EXPLORE MORE </span>
                             <img
                                 src="assets/layout-images/down-arrow.svg"
@@ -315,7 +328,7 @@
                     </div>
                 </div>
 
-                <div class="heading">
+                <div class="heading" id="committee-heading">
                     <h1>Our Committee</h1>
                 </div>
 
@@ -437,9 +450,7 @@
                 </div>
             </section>
 
-            <footer>
-                <!-- TODO: -->
-
+            <footer id="contact-us">
                 <div class="contact-us-footer">
                     <div class="container">
                         <div class="contact-us-text">
@@ -531,6 +542,7 @@
 
         <!-- custom JS -->
         <script src="js/main.js"></script>
+        <script src="js/home.js"></script>
 
         <!-- Swiper Customisation -->
         <script>

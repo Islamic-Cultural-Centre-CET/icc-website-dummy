@@ -12,8 +12,24 @@
             crossorigin="anonymous"
         />
 
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500&family=Ranga:wght@700&family=Roboto:wght@300;400;500;700&family=Rye&family=Source+Sans+Pro:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+
         <!-- CSS Styles -->
-        <link rel="stylesheet" href="./css/background.css" />
+        <link rel="stylesheet" href="../css/background.css" />
+        <link rel="stylesheet" href="../css/main.css" />
         <link rel="stylesheet" href="../css/alumni-portal.css" />
 
         <title>
@@ -21,29 +37,198 @@
         </title>
     </head>
     <body>
-        <div class="page-bg"></div>
+        <!-- Setting Background -->
+        <section>
+            <div class="page-bg"></div>
+            <div class="background-drop"></div>
 
-        <div class="animation-wrapper">
-            <div class="particle particle-1"></div>
-            <div class="particle particle-2"></div>
-            <div class="particle particle-3"></div>
-            <div class="particle particle-4"></div>
-        </div>
+            <div class="animation-wrapper">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+            </div>
+            <div class="clipping"></div>
 
-        <div class="main-section">
-            <h1>Alumni Portal</h1>
-            <!--TODO: Header -->
+            <svg width="100%" height="90" class="height-90">
+                <defs>
+                    <clipPath id="svgPath-90">
+                        <rect width="100%" height="100%" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <svg width="100%" height="80" class="height-80">
+                <defs>
+                    <clipPath id="svgPath-80">
+                        <rect width="100%" height="100%" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </section>
 
-            <!-- TODO: Navigation -->
+        <!-- Main Body of Page including Header -->
+        <section class="main-section">
+            <header>
+                <div class="logo-section">
+                    <a href="../index.html">
+                        <img
+                            src="../assets/layout-images/LOGO.svg"
+                            alt="LOGO"
+                        />
+                        <h1>Islamic Cultural Centre</h1>
+                    </a>
+                </div>
 
-            <!--TODO: Hero Section -->
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li>
+                            <a href="#" class="active">ALUMNI PORTAL</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#contact-us">CONTACT US</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#heading-events">EVENTS</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#committee-heading"
+                                >COMMITTEE</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
 
-            <!--TODO: About Us -->
+                <div class="hamburger" id="hamburger">
+                    <img
+                        src="assets//layout-images/hamburger.svg"
+                        alt="hamburger"
+                    />
+                </div>
+            </header>
 
-            <!--TODO: Events -->
+            <div class="side-nav hide-side-nav">
+                <div class="cross">
+                    <div class="hamburger-close" id="hamburger-close">
+                        <img
+                            src="assets//layout-images/cross.svg"
+                            alt="hamburger-close"
+                        />
+                    </div>
+                </div>
 
-            <!--TODO: Portfolio -->
-        </div>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li>
+                        <a href="#" class="active-nav">ALUMNI PORTAL</a>
+                    </li>
+                    <li><a href="../index.html#heading-events">EVENTS</a></li>
+                    <li><a href="../index.html#contact-us">CONTACT US</a></li>
+                    <li>
+                        <a href="../index.html#committee-heading">COMMITTEE</a>
+                    </li>
+                </ul>
+
+                <div class="social-media-icons">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="main-content container">
+                <!-- TODO: -->
+            </section>
+
+            <footer id="contact-us">
+                <div class="contact-us-footer">
+                    <div class="container">
+                        <div class="contact-us-text">
+                            <h1>Contact Us</h1>
+                            <p>Follow us and stay connected and updated</p>
+                        </div>
+
+                        <div class="contact-us-icons">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <div class="container">
+                        <div class="logo-footer">
+                            <img
+                                src="../assets/layout-images/LOGO.svg"
+                                alt="logo"
+                            />
+                            <div class="footer-logo-content">
+                                <h1>Islamic Cultural Centre</h1>
+                                <p>College of Engineering Trivandram</p>
+                            </div>
+                        </div>
+                        <div class="quick-links-footer">
+                            <div class="quick-link-header">
+                                <h2>Quick Links</h2>
+                            </div>
+                            <div class="quick-link-list">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Alumni Portal</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Scolarship Registration</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Book Collection drive</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Committee</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        Copyright © 2020 ICC-CET. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </section>
 
         <!-- Bootstrap JS -->
         <script
@@ -51,5 +236,9 @@
             integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
             crossorigin="anonymous"
         ></script>
+
+        <!-- custom JS -->
+        <script src="../js/main.js"></script>
+        <script src="../js/alumni-portal.js"></script>
     </body>
 </html>
