@@ -101,7 +101,7 @@ $tablet-width: 768px;
             left: 50%;
             bottom: 10px;
             transform: translateX(-50%);
-            a {
+            > a {
                 display: flex;
                 flex-direction: column;
                 align-items: center;

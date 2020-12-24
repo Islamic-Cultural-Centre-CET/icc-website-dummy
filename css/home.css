@@ -132,7 +132,7 @@
           transform: translateX(-50%);
 }
 
-.main-content .hero-section .explore-more a {
+.main-content .hero-section .explore-more > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,7 +152,7 @@
           animation: move-up-and-down ease-in-out 0.5s alternate infinite;
 }
 
-.main-content .hero-section .explore-more a span {
+.main-content .hero-section .explore-more > a span {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
