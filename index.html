@@ -19,9 +19,22 @@
             rel="stylesheet"
         />
 
+        <!-- Font Awesome icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+
+        <!-- Swiper Js -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+
         <!-- CSS Styles -->
         <link rel="stylesheet" href="./css/background.css" />
-        <!-- <link rel="stylesheet" href="./css/hamburger.css" /> -->
         <link rel="stylesheet" href="./css/home.css" />
 
         <title>
@@ -29,17 +42,37 @@
         </title>
     </head>
     <body>
-        <div class="page-bg"></div>
-        <div class="background-drop"></div>
+        <!-- Setting Background -->
+        <section>
+            <div class="page-bg"></div>
+            <div class="background-drop"></div>
 
-        <div class="animation-wrapper">
-            <div class="particle particle-1"></div>
-            <div class="particle particle-2"></div>
-            <div class="particle particle-3"></div>
-            <div class="particle particle-4"></div>
-        </div>
+            <div class="animation-wrapper">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+            </div>
+            <div class="clipping"></div>
 
-        <div class="main-section">
+            <svg width="100%" height="90" class="height-90">
+                <defs>
+                    <clipPath id="svgPath-90">
+                        <rect width="100%" height="100%" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <svg width="100%" height="80" class="height-80">
+                <defs>
+                    <clipPath id="svgPath-80">
+                        <rect width="100%" height="100%" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </section>
+
+        <!-- Main Body of Page including Header -->
+        <section class="main-section">
             <header>
                 <div class="logo-section">
                     <a href="./index.html">
@@ -78,8 +111,8 @@
                     </div>
                 </div>
 
-                <ul>
-                    <li><a href="#" class="active">HOME</a></li>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#" class="active-nav">HOME</a></li>
                     <li>
                         <a href="pages/alumni-portal.html">ALUMNI PORTAL</a>
                     </li>
@@ -88,93 +121,403 @@
                     <li><a href="#">COMMITTEE</a></li>
                 </ul>
 
-                <div class="scoial-media-icons">
+                <div class="social-media-icons">
                     <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="main-body">
-                <h1>Hello World</h1>
-                <h4>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Laborum saepe eaque aspernatur reprehenderit qui distinctio
-                    nobis ad tenetur dolore officiis eum, accusantium,
-                    consectetur ea. Sint doloremque veniam numquam quos optio
-                    nisi in nemo. Natus unde tempore ducimus dolore, quia nemo
-                    pariatur doloremque eos animi cumque eligendi? Dolor autem
-                    enim, suscipit consectetur dicta ut, explicabo cum sed nobis
-                    porro quo quia culpa incidunt. Voluptates, sunt similique.
-                    Molestias necessitatibus autem possimus accusamus eaque
-                    corrupti nam et saepe quibusdam, aliquam quo, nobis ipsum
-                    eius reprehenderit. Neque sint totam sequi! Deserunt
-                    deleniti excepturi autem omnis eius, provident vel
-                    dignissimos aut enim ullam ea dolores veritatis ut
-                    temporibus nostrum consectetur alias laudantium blanditiis
-                    id facere rem! Non, atque accusamus quod sunt voluptatibus
-                    consectetur ab vero magni ullam facere at adipisci error
-                    facilis perspiciatis. Ad accusamus dolor ullam dicta
-                    adipisci aliquam neque odio natus asperiores. Iste expedita
-                    dolor enim repellendus dolore aut quia fuga natus, libero
-                    animi error eligendi beatae quo quae, laudantium cum
-                    suscipit ab atque modi ad quisquam? Aut impedit officiis
-                    voluptas rem quia dolore quidem. Voluptatibus voluptatem
-                    necessitatibus maiores. Rerum debitis a officia consequuntur
-                    repudiandae? Optio adipisci reiciendis non libero ex
-                    assumenda, beatae modi sed odit eaque eligendi alias eveniet
-                    rerum consectetur asperiores molestias facere qui debitis
-                    veritatis. Tempora ea non recusandae, rem minima voluptas
-                    repellendus cum exercitationem accusamus eius? Totam autem
-                    similique eum, adipisci, atque facilis commodi saepe culpa
-                    minima explicabo quod quasi hic dolorem expedita voluptatum
-                    accusantium inventore ad repellendus. Nesciunt quos
-                    inventore in voluptate culpa itaque illum impedit et unde
-                    minus nobis numquam iusto nulla voluptates doloribus magni
-                    animi, alias similique aliquam, odio ipsam quia totam?
-                    Placeat asperiores assumenda libero porro quisquam soluta
-                    perspiciatis in expedita cumque, reiciendis vitae, beatae
-                    velit dolores. Accusamus eligendi corrupti, consequuntur
-                    iure in fugiat rerum nulla nisi dignissimos tempora eos
-                    repellendus debitis, fugit eum nemo dolorem! Mollitia eius
-                    cum exercitationem doloribus beatae blanditiis eos optio
-                    praesentium tempore! Rem autem officia, magnam ab debitis
-                    optio praesentium ut ipsa eaque libero dolor aspernatur
-                    mollitia modi voluptatum, doloremque minus dolores eveniet
-                    molestiae, ex sed. Maxime, consequatur sunt facere incidunt
-                    pariatur fuga, magni officiis, eos consectetur harum vero at
-                    aut tempora deleniti similique minima eius quod doloribus.
-                    Possimus totam saepe distinctio earum blanditiis id libero
-                    minima quidem. Ex illum commodi ducimus mollitia? Eaque
-                    quidem, non adipisci iste dolorum expedita quod dicta quas
-                    magnam facere vitae? Placeat consequatur dolores totam
-                    obcaecati unde deleniti. Porro eligendi cumque maxime quos
-                    adipisci ullam facere odio doloribus, corrupti vel
-                    accusantium dolorem sequi asperiores! Earum sit facilis eos
-                    corporis tenetur corrupti nam nobis saepe obcaecati unde
-                    veritatis maxime sequi consequuntur eveniet ex, aperiam
-                    accusantium consequatur minima! Commodi alias ea non
-                    architecto soluta amet eveniet tempora ut voluptatum nobis
-                    doloribus officiis quam quisquam fuga error voluptatibus
-                    corporis expedita, iusto id. Cumque expedita a quasi ullam
-                    obcaecati, alias eum minus non, quisquam nam tenetur
-                    suscipit debitis accusamus reprehenderit laborum dolore quam
-                    recusandae optio quo voluptate incidunt neque, qui tempora
-                    omnis! Maxime vero minima, voluptatem numquam magnam facere,
-                    a libero qui molestias ex totam et quidem ad fugiat.
-                </h4>
-            </div>
+            <section class="main-content container">
+                <div class="hero-section">
+                    <div class="inner-bg">
+                        <h1>Islamic Cultural Centre</h1>
 
-            <!--TODO: Hero Section -->
+                        <p>
+                            ICC was founded in 1989 by a group of well guided
+                            muslims of College of Engineering, Trivandrum. It
+                            has now evolved into an organisation which caters
+                            the needs of muslims in the college. ICC had its
+                            humble beginnings in a rented apartment and now it
+                            has flourished into a well structured organisation
+                            occupying a three storey building.
+                        </p>
+                        <div class="hero-social-media">
+                            <div class="dash"></div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fab fa-instagram"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fab fa-twitter"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="explore-more">
+                        <a href="#heading-events">
+                            <span> EXPLORE MORE </span>
+                            <img
+                                src="assets/layout-images/down-arrow.svg"
+                                alt="arrow-down"
+                            />
+                        </a>
+                    </div>
+                </div>
 
-            <!--TODO: About Us -->
+                <div class="heading" id="heading-events">
+                    <h1>Past Events</h1>
+                </div>
 
-            <!--TODO: Events -->
+                <div class="events">
+                    <div class="swiper-container swiper-container-events">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-events">
+                                <img
+                                    src="assets/other-images/alumni event/poster-1.jpg"
+                                    alt="slide-1"
+                                />
+                            </div>
+                            <div class="swiper-slide swiper-slide-events">
+                                <img
+                                    src="assets/other-images/alumni event/poster-1.jpg"
+                                    alt="slide-1"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!--TODO: Portfolio -->
-        </div>
+                <div class="heading">
+                    <h1>Portfolio</h1>
+                </div>
+
+                <div class="portfolio">
+                    <div class="portfolio-wrapper">
+                        <div class="box a">
+                            <img
+                                src="assets/other-images/event/p8.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="box b">
+                            <img
+                                src="assets/other-images/event/p2.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="box c">
+                            <img
+                                src="assets/other-images/event/p3.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="box d">
+                            <img
+                                src="assets/other-images/event/p5.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="box e">
+                            <img
+                                src="assets/other-images/event/p6.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="box f">
+                            <img
+                                src="assets/other-images/event/p4.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="box g">
+                            <img
+                                src="assets/other-images/event/p7.jpg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="box h">
+                            <img
+                                src="assets/other-images/event/p1.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="heading" id="heading-about-us">
+                    <h1>About Us</h1>
+                </div>
+
+                <div class="about-us">
+                    <img
+                        src="assets/other-images/event/p3.jpg"
+                        alt="portfolio"
+                    />
+                    <div class="about-content">
+                        <p>
+                            Islamic Cultural Centre is an organisation
+                            established to identify, assist and aid the muslim
+                            community of College of Engineering Trivandrum. It
+                            is located at the close proximity opposite to the
+                            college. ICC has been running under the leadership
+                            of Prof. Abdul Rasheed, Retired HOD of Mechanical
+                            Department CET, from its inception in 1989 onwards.
+                            <br />
+                            <span class="more" id="more-content">
+                                Every year a new body of ICC Committee is
+                                elected and carry out the plans and activities
+                                of the year including weekly Qur'an classes,
+                                SQUIF activities, Islamic quiz, Islamic classes
+                                by prominent scholars and so on. ICC also
+                                provides mental and financial support to the
+                                students in need. ICC also has Student Mess and
+                                Library that provides books of syllabus related
+                                publications of various departments and also
+                                contains islamic books and Hadith's. ICC has
+                                grown over the past years with overwhelming
+                                number of students registering every year and
+                                with a huge network of Alumnis.
+                                <br />
+                                ICC has evolved throughout the year from a
+                                rented apartment to a bigger three storey
+                                building having various facilities including
+                                student mess, library, praying hall. Annual
+                                elections were held to select new committee to
+                                lead the community towards more progressive
+                                goals. Hostel facilities were made nearby for
+                                fresher students. ICC has become the
+                                intersection where students of different
+                                backgrounds interacts irrespective of political
+                                affiliations and other islamic organisations
+                            </span>
+                        </p>
+                        <span id="read-more">READ MORE</span>
+                    </div>
+                </div>
+
+                <div class="heading">
+                    <h1>Our Committee</h1>
+                </div>
+
+                <div class="committee">
+                    <div class="swiper-container swiper-container-committee">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-committee">
+                                <img
+                                    src="assets/other-images/committee/favasP.jpg"
+                                    alt="committee"
+                                />
+                                <h1 class="name">Favas P</h1>
+                                <p class="position">Current position</p>
+                                <a href="#" class="whatsapp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <!-- TODO: -->
+
+                <div class="contact-us-footer">
+                    <div class="container">
+                        <div class="contact-us-text">
+                            <h1>Contact Us</h1>
+                            <p>Follow us and stay connected and updated</p>
+                        </div>
+
+                        <div class="contact-us-icons">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <div class="container">
+                        <div class="logo-footer">
+                            <img
+                                src="assets/layout-images/LOGO.svg"
+                                alt="logo"
+                            />
+                            <div class="footer-logo-content">
+                                <h1>Islamic Cultural Centre</h1>
+                                <p>College of Engineering Trivandram</p>
+                            </div>
+                        </div>
+                        <div class="quick-links-footer">
+                            <div class="quick-link-header">
+                                <h2>Quick Links</h2>
+                            </div>
+                            <div class="quick-link-list">
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Alumni Portal</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Scolarship Registration</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Book Collection drive</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Committee</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        Copyright © 2020 ICC-CET. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </section>
 
         <!-- Bootstrap JS -->
         <script
@@ -183,7 +526,47 @@
             crossorigin="anonymous"
         ></script>
 
+        <!-- Swiper Js -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
         <!-- custom JS -->
         <script src="js/main.js"></script>
+
+        <!-- Swiper Customisation -->
+        <script>
+            var swiper = new Swiper('.swiper-container-events', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true
+                }
+            })
+
+            var swiper = new Swiper('.swiper-container-committee', {
+                slidesPerView: 1.3,
+                spaceBetween: 30,
+
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 30
+                    },
+                    768: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 30
+                    },
+                    1024: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 40
+                    }
+                }
+            })
+        </script>
     </body>
 </html>
