@@ -16,3 +16,8 @@ Object.values(navList).forEach((item) => {
         sideNav.classList.add('hide-side-nav')
     })
 })
+
+document.querySelector('.animation').classList.remove('hide-animation')
+window.onload = () => {
+    document.querySelector('.animation').classList.add('hide-animation')
+}

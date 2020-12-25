@@ -22,10 +22,48 @@ $desktop-width: 1024px;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     height: 100%;
     position: relative;
     z-index: 0;
+}
+.animation {
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    height: 100vh;
+    transition: opacity ease-out 0.2s;
+
+    background-color: #0d111e;
+    z-index: 80;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > div {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        div {
+            border-radius: 50%;
+            padding: 4px;
+            border: 2px solid transparent;
+            box-sizing: border-box;
+            height: 100%;
+            border-top-color: #2bff00;
+            animation: rotate 4s infinite linear;
+        }
+    }
+}
+.hide-animation {
+    opacity: 0;
+    z-index: -99;
+    > div {
+        div {
+            animation: none;
+        }
+    }
 }
 
 .height-90 {
@@ -85,7 +123,7 @@ h1 {
 
 .main-section {
     position: relative;
-     header {
+    header {
         position: fixed;
         top: 0;
         left: 0;
@@ -323,7 +361,6 @@ h1 {
         opacity: 0;
         pointer-events: none;
     }
-
 }
 
 footer {
@@ -557,5 +594,17 @@ footer {
                 left: calc(100% + 20px);
             }
         }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
