@@ -30,11 +30,19 @@
         <!-- CSS Styles -->
         <link rel="stylesheet" href="../css/background.css" />
         <link rel="stylesheet" href="../css/main.css" />
-        <link rel="stylesheet" href="../css/alumni-portal.css" />
 
         <title>
             Islamic Cultural Centre - College of Engineering Trivandram
         </title>
+        <style>
+            #alumni-registration,
+            #form-not-selected,
+            #book-collection-drive,
+            #contribute-to-scholarship,
+            #apply-scholarship {
+                display: none;
+            }
+        </style>
     </head>
     <body>
         <!-- Setting Background -->
@@ -83,10 +91,12 @@
                     <ul>
                         <li><a href="../index.html">HOME</a></li>
                         <li>
-                            <a href="#" class="active">ALUMNI PORTAL</a>
+                            <a href="./alumni-portal.html" class="active"
+                                >ALUMNI PORTAL</a
+                            >
                         </li>
                         <li>
-                            <a href="./alumni-portal.html#contact-us"
+                            <a href="./registration.html#contact-us"
                                 >CONTACT US</a
                             >
                         </li>
@@ -122,11 +132,13 @@
                 <ul class="nav-list" id="nav-list">
                     <li><a href="../index.html">HOME</a></li>
                     <li>
-                        <a href="#" class="active-nav">ALUMNI PORTAL</a>
+                        <a href="./alumni-portal.html" class="active-nav"
+                            >ALUMNI PORTAL</a
+                        >
                     </li>
                     <li><a href="../index.html#heading-events">EVENTS</a></li>
                     <li>
-                        <a href="./alumni-portal.html#contact-us">CONTACT US</a>
+                        <a href="./registration.html#contact-us">CONTACT US</a>
                     </li>
                     <li>
                         <a href="../index.html#committee-heading">COMMITTEE</a>
@@ -163,210 +175,91 @@
                 </div>
             </div>
 
-            <section class="main-content-alumni-portal container">
-                <section class="hero-alumni-portal">
-                    <div class="still-remember">
-                        <div class="first-dash"></div>
-                        <p>Still remember those days</p>
-                        <div class="last-dash"></div>
-                    </div>
-                    <div class="main-tagline">
-                        <h1>
-                            MEETING
-                            <span><br /></span>
-                            THE MOMENT,
-                            <br />
-                            TOGETHER
-                        </h1>
+            <section class="main-content-registration-portal container">
+                <!-- Alumni Registration -->
+                <div id="alumni-registration">
+                    <div class="heading">
+                        <h1>Alumni Registration</h1>
                     </div>
 
-                    <div class="explore-alumni">
-                        <a href="./alumni-portal.html#registration-portal">
-                            <span> EXPLORE </span>
-                            <img
-                                src="../assets/layout-images/down-arrow.svg"
-                                alt="arrow-down"
-                            />
-                        </a>
-                    </div>
-                </section>
-
-                <div class="heading" id="registration-portal">
-                    <h1>Registration Portal</h1>
-                </div>
-
-                <div class="alumni-registration">
-                    <h1>Alumni Registration</h1>
-                    <div>
-                        <img
-                            src="../assets//other-images/forms/group.png"
-                            alt="group"
-                        />
-                        <p>
-                            We have started ICC-CET Alumni Forum in the first
-                            alumni meet held on 9th July 2016 @Calicut, To
-                            coordinate various activities among us.This forum
-                            will follow the principles of ICC-CET Trivandrum.
-                            Our main objective is to motivate and coordinate our
-                            younger brothers and sisters in academic upliftment
-                            as well as career development.
-                        </p>
-                    </div>
-                    <a href="./registration.html?form=alumni-registration">
-                        REGISTER
-                    </a>
-                </div>
-
-                <div class="book-collection-drive" id="book-collection-drive">
-                    <h1>Book Collection Drive</h1>
-                    <div>
-                        <img
-                            src="../assets//other-images/forms/book.png"
-                            alt="group"
-                        />
-                        <p>
-                            An ICC CET Alumni initiative to enrich the IC
-                            Library with help of its Alumni. We are collecting
-                            used guide books for competitive exams like
-                            GATE,CAT,IES,UPSC CSE etc, which can be donated to
-                            IC library. Donated books will be made available for
-                            the present students and will be benefited in coming
-                            years In sha Allah.
-                        </p>
-                    </div>
-                    <a href="./registration.html?form=book-collection-drive">
-                        DONATE
-                    </a>
-                </div>
-
-                <div
-                    class="apply-for-alumni-scolarship"
-                    id="apply-for-alumni-scolarship"
-                >
-                    <h1>Apply for Alumni Scolarship</h1>
-                    <div>
-                        <img
-                            src="../assets//other-images/forms/help.png"
-                            alt="group"
-                        />
-                        <div>
-                            <p>
-                                Apply for Islamic Cultural Center (ICC) Alumni
-                                interest-free loan Scholarship Scheme 2020-21
-                                for better education of our brothers
-                            </p>
-                            <a
-                                href="./registration.html?form=apply-for-alumni-scholarship"
-                            >
-                                APPLY NOW
-                            </a>
-                        </div>
+                    <div class="row alumni-registration">
+                        <iframe
+                            class="col s12 l12 m12"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdnT6AL9NCHL8iJ4x-H56ldwwJscdcZP7egd0CmxCFzBQ0ijQ/viewform?embedded=true"
+                            frameborder="0"
+                            height="2000"
+                            width="900"
+                            marginheight="0"
+                            marginwidth="0"
+                            >Loading…</iframe
+                        >
                     </div>
                 </div>
 
-                <div class="contribute-to-alumni-scolarship">
-                    <h1>Contribute to Alumni Scloarship</h1>
-                    <div>
-                        <img
-                            src="../assets//other-images/forms/hand.png"
-                            alt="group"
-                        />
-                        <div>
-                            <p>
-                                This forum is intended to keep a record of the
-                                contributing people of our relief amount. In sha
-                                Allah we will maintain the secrecy of the
-                                information .
-                            </p>
-                            <a
-                                href="./registration.html?form=contribute-to-scholarship"
-                            >
-                                Contribute
-                            </a>
-                        </div>
+                <!-- Book Collection Drive -->
+                <div id="book-collection-drive">
+                    <div class="heading">
+                        <h1>Book Collection</h1>
                     </div>
-                </div>
 
-                <div class="heading">
-                    <h1>Gallery</h1>
-                </div>
-
-                <div class="gallery">
                     <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
+                        <iframe
+                            class="col s12 l12 m12"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe2jnsj_EBhd_2US4eXzf0_8e0omAArR1qu04ZxjFkK5r1RdA/viewform?embedded=true"
+                            width="900"
+                            height="2000"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                            >Loading…</iframe
+                        >
+                    </div>
+                </div>
 
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
+                <!-- Contribute to Scholarship -->
+                <div id="contribute-to-scholarship">
+                    <div class="heading">
+                        <h1>Contribute</h1>
+                    </div>
 
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                            <img
-                                src="../assets/other-images/alumni event/al-1.JPG"
-                                alt="alumni"
-                            />
-                        </div>
+                    <div class="row">
+                        <iframe
+                            class="col s12 l12 m12"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSdpKZ0OMeLbSec2zNL4lS97B_iAtrbmebVQS-vOWhRv6o87Ew/viewform?embedded=true"
+                            width="900"
+                            height="2000"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                            >Loading…</iframe
+                        >
+                    </div>
+                </div>
+
+                <!-- Apply to Scolarship -->
+                <div id="apply-scholarship">
+                    <div class="heading">
+                        <h1>Apply Scholarship</h1>
+                    </div>
+
+                    <div class="row">
+                        <iframe
+                            class="col s12 l12 m12"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSflXBaSjZPKwKLy32cYMjKqzGkYqPXddihaEiDGcT0m4X68BA/viewform?embedded=true"
+                            width="900"
+                            height="3100"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                            >Loading…</iframe
+                        >
+                    </div>
+                </div>
+
+                <!-- Default Form Not Selected -->
+                <div id="form-not-selected">
+                    <div class="heading">
+                        <h1>No Form Selected</h1>
                     </div>
                 </div>
             </section>
@@ -439,7 +332,9 @@
                                         <a href="../index.html">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">Alumni Portal</a>
+                                        <a href="./alumni-portal.html"
+                                            >Alumni Portal</a
+                                        >
                                     </li>
                                     <li>
                                         <a
@@ -481,6 +376,6 @@
 
         <!-- custom JS -->
         <script src="../js/main.js"></script>
-        <script src="../js/alumni-portal.js"></script>
+        <script src="../js/registration.js"></script>
     </body>
 </html>
